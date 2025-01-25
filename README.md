@@ -2,13 +2,13 @@
 
 코드 구조 설명
 
-FinanaceDataReader에서 모든 국장(2800개)의 시가, 고가, 저가, 종가 불러오기
+1. FinanaceDataReader에서 불러온 모든 국장(2800개)의 시가, 고가, 저가, 종가
 
-yfinance에서 모든 국장의 재무제표(roe, roa, dy) 불러오기
+2. yfinance에서 불러온 모든 국장의 재무제표(roe, roa, dy)
 
-5일, 20일, 60일의 Moving Average, Volatillity, RSI 등의 기술적 지표 불러오기
+3. 5일, 20일, 60일의 Moving Average, Volatillity, RSI 등의 기술적 지표
 
-불러온 특성을 모두 결합해 XGBoost, RandomForest, SVM를 bagging한 앙상블 모델에 학습 및 최적화
+상기 변수 모두 결합해 XGBoost, RandomForest, SVM를 bagging한 앙상블 모델에 학습 및 최적화
 
 학습 후 10일 후의 종목 종가 예측값, 각 예측의 평가지표인 RMSE, MAPE print
 
